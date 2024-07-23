@@ -88,7 +88,7 @@ public partial class SelfAssemblyAgent{
 
     private async UniTask ActivePulseFeedback(Color color) {
         _pulseFeedbackRender.material.color = color;
-        await UniTask.Delay(100, cancellationToken: AgentContext.destroyCancellationToken);
+        await UniTask.Delay(200, cancellationToken: AgentContext.destroyCancellationToken);
         _pulseFeedbackRender.material.color = Color.black;
     }
 

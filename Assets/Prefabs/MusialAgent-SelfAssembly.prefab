@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: 4130423220035473604}
   - component: {fileID: 4130423220035473605}
   - component: {fileID: 4130423220035473602}
-  - component: {fileID: 4130423220035473603}
   - component: {fileID: -1613195254958892351}
   m_Layer: 6
   m_Name: MusialAgent-SelfAssembly
@@ -186,26 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ID: 0
-  Transmitter: {fileID: 0}
-  Receiver: {fileID: 4130423220035473603}
-  testTransmission: 0
   visualFeeback: {fileID: -1613195254958892351}
-  shape: 3
-  movementMode: 0
-  speed: 1
-  direction: {x: 0, y: 0, z: 1}
---- !u!114 &4130423220035473603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4130423220035473608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f1478414a58f94c81bc7eb2e38dc9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-1613195254958892351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +258,6 @@ GameObject:
   - component: {fileID: 844393688620396297}
   - component: {fileID: 739445718873417855}
   - component: {fileID: 1782797901805307271}
-  - component: {fileID: 7598821227161502500}
   m_Layer: 7
   m_Name: GenericRadius
   m_TagString: AgentCommunication
@@ -351,15 +330,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7598821227161502500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5042183309254121254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc017ae6200c4db4ea80758bbd97b705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
