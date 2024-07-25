@@ -5,7 +5,7 @@ using UnityEngine;
 public class SelfAssemblyExperimentsManager : MonoBehaviour
 {
     public string sceneName = "self-assembly";
-    public string dataPath = "C:/Users/pitte/Documents/Repositories/self_assembly_music/data_analysis/data/";
+    public string dataPath = "C:/data/";
     public int[] agentsCount;
     public int[] joinTimes;
     public int samplesCount = 30;
@@ -23,11 +23,6 @@ public class SelfAssemblyExperimentsManager : MonoBehaviour
         else {
             Destroy(gameObject);
         }
-        //Test
-        //var currentFolder = "size-" + 0 + "-join-" + 1 + "/";
-        //System.IO.Directory.CreateDirectory(dataPath + currentFolder);
-        //System.IO.File.WriteAllText(dataPath + currentFolder  + "SYNC-STRUCT-2024_04_29_16_28_13-N-50-ls-1-hs-1-wt-1-jt-5-jr-2-js-6-rb-2-f-1.csv", "tessss");
-        //Quit();
     }
 
     private string _currentFolder = "";

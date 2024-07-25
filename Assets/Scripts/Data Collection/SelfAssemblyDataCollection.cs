@@ -10,7 +10,7 @@ public class SelfAssemblyDataCollection : MonoBehaviour
 {
     public SelfAssemblyController selfAssemblyController;
 
-    public string dataPath = "C:/Users/pitte/Documents/Repositories/self_assembly_music/data_analysis/data/";
+    public string dataPath = "C:/data/";
     public bool saveData = true;
 
     private List<(int, float)> _allSyncData;
@@ -99,34 +99,6 @@ public class SelfAssemblyDataCollection : MonoBehaviour
                 string data = "";
                 for (int i = 0; i < _allSyncData.Count; i++) {
                     data += _allSyncData[i].Item1 + "," + _allSyncData[i].Item2 + "\n";
-                }
-                System.IO.File.WriteAllText(fileName + ".csv", header + data);
-                trySaving = false;
-            } catch (Exception e) {
-                //Writing the message in a log file
-                exception += e.Message + "\n";
-                trySaving = true;
-                System.IO.File.WriteAllText(fileName + "_EXC.logerror", exception);
-            }
-        }
-    }
-
-    private void SaveStructuresX(string fileName) {
-        bool trySaving = true;
-        string exception = "";
-        while (trySaving) {
-            try {
-                string header = "time,N,structure\n";
-                string data = "";
-                for (int i = 0; i < _allStructures.Count; i++) {
-                    for (int j = 0; j < _allStructures[i].Item4.Count; j++) {
-                        var structure = _allStructures[i].Item4[j];
-                        data += _allStructures[i].Item1 + "," + 
-                            _allStructures[i].Item2 +","+
-                            _allStructures[i].Item3 + "," +
-                            structure.Items.Count + ","+
-                            structure.ToString() + "\n";
-                    }
                 }
                 System.IO.File.WriteAllText(fileName + ".csv", header + data);
                 trySaving = false;

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0003201571, g: 0.0000007138344, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1046,7 +1046,7 @@ MonoBehaviour:
   agentsSize: 50
   agentsScale: 0.1
   minAgentSpeed: 1
-  maxAgentSpeed: 2
+  maxAgentSpeed: 1
   onlyWanderingTime: 1
   maxJoinTime: 5
   agentJoinRadiusFactor: 2
@@ -1054,11 +1054,11 @@ MonoBehaviour:
   radiusBoundary: 2
   boundaryTrans: {fileID: 663534118}
   PlaySound: 1
-  Frequency: 0.25
+  Frequency: 1
   gain: 0.2
   csoundUnityGen: {fileID: 1174634032}
   OnlySimulate: 0
-  iterations: 30000
+  iterations: 1000
   _selfAssemblyAgents: []
 --- !u!114 &1185587277
 MonoBehaviour:
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfAssemblyController: {fileID: 1185587276}
-  dataPath: C:/Users/Pedro/Documents/PhD_RITMO/Repositories/self_assembly_music/data_analysis/data/
+  dataPath: C:/data/
   saveData: 1
 --- !u!1 &1226242660
 GameObject:

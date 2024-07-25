@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &358983697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,11 +153,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: self-assembly
-  dataPath: C:/Users/Pedro/Documents/PhD_RITMO/Repositories/self_assembly_music/data_analysis/data/sync_struct_5_100/
+  dataPath: C:/data/sync_struct_5_100/
   agentsCount: 050000000a000000140000001e00000028000000320000003c00000046000000500000005a00000064000000
   joinTimes: 05000000
-  samplesCount: 30
-  iterations: 30000
+  samplesCount: 2
+  iterations: 1000
 --- !u!4 &358983698
 Transform:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1263064933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,11 +203,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: self-assembly
-  dataPath: C:/Users/Pedro/Documents/PhD_RITMO/Repositories/self_assembly_music/data_analysis/data/sync_struct_50_join_5_50/
+  dataPath: C:/data/sync_struct_50_join_5_50/
   agentsCount: 32000000
   joinTimes: 050000000a0000000f00000014000000190000001e00000023000000280000002d00000032000000
-  samplesCount: 1
-  iterations: 30000
+  samplesCount: 2
+  iterations: 1000
 --- !u!4 &1263064934
 Transform:
   m_ObjectHideFlags: 0
